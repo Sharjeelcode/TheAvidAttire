@@ -1,8 +1,5 @@
-# React + Vite
+The Avid Attire - E-commerce Website
+Welcome to The Avid Attire's e-commerce website repository! This project is dedicated to creating an online platform for selling T-shirts under The Avid Attire brand.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Introduction
+The Avid Attire is a trendy and vibrant brand specializing in high-quality T-shirts designed for fashion-conscious individuals. Our e-commerce website aims to provide customers with a seamless shopping experience, allowing them to browse through our collection, make purchases securely, and stay updated on the latest arrivals and promotions.
