@@ -55,7 +55,7 @@ function Header() {
           className="lg:hidden text-white"
         />
         <div className="flex items-center  gap-2 cursor-pointer">
-          <img src={logo} alt="" className="w-10  lg:w-20 lg:h-16 " />
+          <img src={logo} alt="" className="w-16   lg:w-20 lg:h-16 " />
           <div>
             <h1 className=" font-bold  text-white">The Avid Attire</h1>
             <p className="text-xs text-center font-semibold text-white">
