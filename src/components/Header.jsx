@@ -26,31 +26,66 @@ function Header() {
       )}
       {mobileHeader && (
         <div className=" lg:hidden flex flex-col gap-4 pt-10 pl-4 w-[80vw] h-[100vh]  bg-white fixed top-0  z-[100]">
-          <NavLink to={"/"} className="cursor-pointer">
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+            }
+          >
             HOME
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/shirts"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+            }
+          >
             SHIRTS
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/oversized"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+            }
+          >
             OVERSIZED T-SHIRTS
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/plain"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+            }
+          >
             PLAIN T-SHIRTS
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/ragular"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+            }
+          >
             RAGULAR FIT T-SHIRTS
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/bottomWear"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""}cursor-pointer `
+            }
+          >
             BOTTOM WEAR
           </NavLink>
           <hr />
-          <NavLink to={""} className="cursor-pointer">
+          <NavLink
+            to={"/bestSeller"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : "text-black"}cursor-pointer`
+            }
+          >
             BEST SELLERS
           </NavLink>
         </div>
@@ -67,33 +102,71 @@ function Header() {
           </div>
         </NavLink>
         <div className="hidden lg:flex gap-4 ">
-          <NavLink to={"/"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             HOME
           </NavLink>
-          <NavLink to={"/shirts"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/shirts"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             SHIRTS
           </NavLink>
-          <NavLink to={"/oversized"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/oversized"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             OVERSIZED T-SHIRTS
           </NavLink>
-          <NavLink to={"/plain"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/plain"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             PLAIN T-SHIRTS
           </NavLink>
-          <NavLink to={"/ragular"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/ragular"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             RAGULAR FIT T-SHIRTS
           </NavLink>
-          <NavLink to={"/bottomWear"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/bottomWear"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             BOTTOM WEAR
           </NavLink>
-          <NavLink to={"/bestSeller"} className="cursor-pointer font-semibold">
+          <NavLink
+            to={"/bestSeller"}
+            className={({ isActive }) =>
+              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+            }
+          >
             BEST SELLERS
           </NavLink>
         </div>
         <div className="flex gap-4">
-          <FaHeart className="cursor-pointer " />
-          <NavLink to={"/cart"}>
+          {/* <FaHeart className="cursor-pointer " /> */}
+          <NavLink to={"/cart"} className="relative h-full">
             <FaCartShopping className="cursor-pointer " />
           </NavLink>
+          <span className="absolute top-1 right-1 lg:top-3 lg:right-5 text-xs bg-black rounded-full px-1 text-white">
+            0
+          </span>
         </div>
       </div>
     </>
