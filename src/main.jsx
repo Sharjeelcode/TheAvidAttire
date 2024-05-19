@@ -13,6 +13,8 @@ import BottomWear from "./pages/BottomWear.jsx";
 import BestSeller from "./pages/BestSeller.jsx";
 import Cart from "./pages/Cart.jsx";
 import Hero from "./pages/Hero.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
+import Faqs from "./pages/Faqs.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -27,6 +29,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/bottomWear" element={<BottomWear />} />
           <Route path="/bestSeller" element={<BestSeller />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/faqs" element={<Faqs />} />
         </Route>
       </Routes>
     </BrowserRouter>

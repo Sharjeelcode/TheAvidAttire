@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import TopHeader from "./TopHeader";
-import { FaHeart } from "react-icons/fa6";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaAlignJustify } from "react-icons/fa6";
-import HeroImg from "./HeroImg";
 import { NavLink } from "react-router-dom";
 
 function Header() {
@@ -96,7 +94,7 @@ function Header() {
           <img src={logo} alt="" className="w-16   lg:w-20 lg:h-16 " />
           <div>
             <h1 className=" font-bold  ">The Avid Attire</h1>
-            <p className="text-xs text-center font-semibold ">
+            <p className="text-xs text-center font-semibold text-[#78E201]">
               Wear you passion
             </p>
           </div>

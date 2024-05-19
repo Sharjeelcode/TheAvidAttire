@@ -10,9 +10,9 @@ function TopHeader() {
     <div className=" bg-black lg:flex justify-between  text-white lg:px-12 lg:h-8 text-sm">
       <div className="hidden lg:flex text-white items-center gap-2 ">
         <FaPhoneFlip />
-        <span className="text">+92 306 322223999</span>
+        <span className="text">+92 316 7740074</span>
       </div>
-      <div className="flex items-center   ">
+      <div className="flex items-center  justify-center  ">
         <h1>🔥Enjoy Free Shipping All Over Pakistan!</h1>
       </div>
       <div className="hidden text-white lg:flex items-center gap-3  ">
