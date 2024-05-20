@@ -27,7 +27,7 @@ function Header() {
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer`
             }
           >
             HOME
@@ -36,7 +36,7 @@ function Header() {
           <NavLink
             to={"/shirts"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer`
             }
           >
             SHIRTS
@@ -45,7 +45,7 @@ function Header() {
           <NavLink
             to={"/oversized"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer`
             }
           >
             OVERSIZED T-SHIRTS
@@ -54,7 +54,7 @@ function Header() {
           <NavLink
             to={"/plain"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer`
             }
           >
             PLAIN T-SHIRTS
@@ -63,7 +63,7 @@ function Header() {
           <NavLink
             to={"/ragular"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer`
             }
           >
             RAGULAR FIT T-SHIRTS
@@ -72,7 +72,7 @@ function Header() {
           <NavLink
             to={"/bottomWear"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""}cursor-pointer `
+              `${isActive ? "text-[#F96A00]" : ""}cursor-pointer `
             }
           >
             BOTTOM WEAR
@@ -81,7 +81,7 @@ function Header() {
           <NavLink
             to={"/bestSeller"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : "text-black"}cursor-pointer`
+              `${isActive ? "text-[#F96A00]" : "text-black"}cursor-pointer`
             }
           >
             BEST SELLERS
@@ -94,7 +94,7 @@ function Header() {
           <img src={logo} alt="" className="w-16   lg:w-20 lg:h-16 " />
           <div>
             <h1 className=" font-bold  ">The Avid Attire</h1>
-            <p className="text-xs text-center font-semibold text-[#78E201]">
+            <p className="text-xs text-center font-semibold text-[#F96A00]">
               Wear you passion
             </p>
           </div>
@@ -103,7 +103,7 @@ function Header() {
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             HOME
@@ -111,7 +111,7 @@ function Header() {
           <NavLink
             to={"/shirts"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             SHIRTS
@@ -119,7 +119,7 @@ function Header() {
           <NavLink
             to={"/oversized"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             OVERSIZED T-SHIRTS
@@ -127,7 +127,7 @@ function Header() {
           <NavLink
             to={"/plain"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             PLAIN T-SHIRTS
@@ -135,7 +135,7 @@ function Header() {
           <NavLink
             to={"/ragular"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             RAGULAR FIT T-SHIRTS
@@ -143,7 +143,7 @@ function Header() {
           <NavLink
             to={"/bottomWear"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             BOTTOM WEAR
@@ -151,7 +151,7 @@ function Header() {
           <NavLink
             to={"/bestSeller"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#78E201]" : ""} cursor-pointer font-semibold`
+              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
             }
           >
             BEST SELLERS
