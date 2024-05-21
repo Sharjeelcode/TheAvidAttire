@@ -1,13 +1,18 @@
 import React from "react";
+import video from "../assets/herovideo.mp4";
 
 function HeroImg() {
   return (
     <>
-      <img
-        src="https://thehangerpakistan.com/cdn/shop/files/db437a06-f20e-40c4-9038-6034cbb372ff_1512x851.jpg?v=1711411569"
-        alt=""
-        className=" h-full w-full "
-      />
+      <div className="w-full  bg-black">
+        <video
+          src={video}
+          className="h-[90vh] w-full object-fill"
+          autoPlay
+          loop
+          muted
+        />
+      </div>
     </>
   );
 }
