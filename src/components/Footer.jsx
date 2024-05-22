@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa6";
-import logo from "../assets/logoicon.png";
+import logo from "../assets/whitelogo.png";
 function Footer() {
   return (
     <>
@@ -57,13 +57,17 @@ function Footer() {
             to={"/"}
             className="flex flex-col items-center  gap-2 cursor-pointer"
           >
-            <img src={logo} alt="" className="w-16   lg:w-20 lg:h-16 " />
-            <div>
+            <img
+              src={logo}
+              alt=""
+              className="w-auto h-10    lg:w-auto lg:h-auto lg:mt-4 "
+            />
+            {/* <div>
               <h1 className=" font-bold  ">The Avid Attire</h1>
               <p className="text-xs text-center font-semibold ">
                 Wear you passion
               </p>
-            </div>
+            </div> */}
           </NavLink>
         </div>
       </div>
