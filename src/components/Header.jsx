@@ -18,7 +18,7 @@ function Header() {
       {mobileHeader && (
         <span
           onClick={handleMobileHeader}
-          className="fixed top-20 left-[70vw] text-lg bg-gray-200 w-[15vw] h-[15vh] flex justify-center text-[#F96A00] items-center lg:hidden"
+          className="fixed top-20 left-[70vw] text-lg bg-gray-200 w-[10vw] h-[10vh] flex justify-center text-[#F96A00] items-center lg:hidden"
         >
           x
         </span>
@@ -92,7 +92,7 @@ function Header() {
       <div className="sticky top-0 bg-white flex h-auto  items-center justify-between px-4 lg:px-8 py-3 lg:py-2 ">
         <FaAlignJustify onClick={handleMobileHeader} className="lg:hidden " />
         <NavLink to={"/"} className=" cursor-pointer">
-          <img src={logo} alt="" className="w-16 h-5   lg:w-48 lg:h-auto " />
+          <img src={logo} alt="" className="w-auto h-8   lg:w-48 lg:h-auto " />
           {/* <div>
             <h1 className=" font-bold  ">The Avid Attire</h1>
             <p className="text-xs text-center font-semibold text-[#F96A00]">
