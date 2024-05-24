@@ -4,7 +4,7 @@ function HeroImg() {
   return (
     <>
       <img
-        src="https://thehangerpakistan.com/cdn/shop/files/db437a06-f20e-40c4-9038-6034cbb372ff_1512x851.jpg?v=1711411569"
+        src="https://checkmateatelier.com/cdn/shop/files/banner_8bfe5aca-ba51-4aa4-817c-cd187bad1e7c.jpg?v=1688983173&width=750"
         alt=""
         className=" h-full w-full "
       />

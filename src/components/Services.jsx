@@ -4,7 +4,7 @@ import calender from "../assets/calender.png";
 import exchange from "../assets/exchange.png";
 function Services() {
   return (
-    <div className=" justify-around mb-8 hidden lg:flex">
+    <div className=" justify-around mb-8 hidden pb-8 lg:flex">
       <div className="flex gap-3 items-center">
         <img src={phone} alt="" />
         <div className="flex flex-col ">

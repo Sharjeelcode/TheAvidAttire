@@ -89,7 +89,7 @@ function Header() {
           </NavLink>
         </div>
       )}
-      <div className="sticky top-0 z-[100] bg-white flex h-auto  items-center justify-between px-4 lg:px-8 py-3 lg:py-2 ">
+      <div className="sticky top-0 z-[100] shadow-md shadow-gray-400 bg-white flex h-auto  items-center justify-between px-4 lg:px-8 py-3 lg:py-2 ">
         <FaAlignJustify onClick={handleMobileHeader} className="lg:hidden " />
         <NavLink to={"/"} className=" cursor-pointer">
           <img src={logo} alt="" className="w-auto h-8   lg:w-48 lg:h-auto " />
@@ -104,7 +104,9 @@ function Header() {
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              `${isActive ? "text-[#F96A00]" : ""} cursor-pointer font-semibold`
+              `${
+                isActive ? "text-[#F96A00]" : ""
+              } cursor-pointer font-semibold `
             }
           >
             HOME

@@ -9,7 +9,7 @@ const Cards = () => {
 
   return (
     <div
-      className="my-4 "
+      className="my-4 w-72"
       onMouseEnter={() => setCardHover(true)}
       onMouseLeave={() => setCardHover(false)}
     >
@@ -21,7 +21,7 @@ const Cards = () => {
         <img
           src={isHovered ? demo1 : demo2}
           alt="Card"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover cursor-pointer "
         />
         {cardHover && (
           <div className="absolute bottom-2 w-full">
@@ -55,7 +55,7 @@ const Cards = () => {
           </div>
         )}
       </div>
-      <div className="flex justify-center flex-col items-center">
+      <div className="flex justify-center flex-col items-center cursor-pointer">
         <h1 className="font-semibold">OVERSIZED TEE</h1>
         <p>Rs:1999</p>
       </div>

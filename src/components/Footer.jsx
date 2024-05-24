@@ -10,24 +10,24 @@ function Footer() {
     <>
       <div className="bg-black text-white gap-4 lg:gap-0 grid lg:grid-cols-4 justify-items-center lg:px-20 py-4">
         <div className="hidden lg:block">
-          <h1 className="py-4 text-lg">Quick Shop</h1>
-          <div className="flex flex-col gap-2">
-            <NavLink to={"/plain"} className="text-sm hover:underline">
-              Plain T-Shirts
-            </NavLink>
-            <NavLink to={"/bestseller"} className="text-sm hover:underline">
-              Best Seller
-            </NavLink>
+          <h1 className="py-4 ">Quick Shop</h1>
+          <div className="flex flex-col gap-2 ">
             <NavLink to={"/oversized"} className="text-sm hover:underline">
               Oversized T-Shirts
             </NavLink>
             <NavLink to={"/ragular"} className="text-sm hover:underline">
               Ragular Fit T-Shirts
             </NavLink>
+            <NavLink to={"/plain"} className="text-sm hover:underline">
+              Plain T-Shirts
+            </NavLink>
+            <NavLink to={"/bestseller"} className="text-sm hover:underline">
+              Best Seller
+            </NavLink>
           </div>
         </div>
         <div className="hidden lg:block">
-          <h1 className="py-4 text-lg">Get to Know Us</h1>
+          <h1 className="py-4 ">Get to Know Us</h1>
           <div className="flex flex-col gap-2">
             <NavLink to={"/contactus"} className="text-sm hover:underline">
               Contact Us
@@ -38,7 +38,7 @@ function Footer() {
           </div>
         </div>
         <div className="text-center">
-          <h1 className="py-4 text-lg">Customer Care</h1>
+          <h1 className="py-4 ">Customer Care</h1>
           <div className="flex flex-col gap-2">
             <h1 className="text-sm">Timings:11 AM - 7 PM (Mon - Sat)</h1>
             <h1 className="text-sm">Whatsapp : +92 316 7740074</h1>
@@ -60,18 +60,12 @@ function Footer() {
             <img
               src={logo}
               alt=""
-              className="w-auto h-10    lg:w-auto lg:h-auto lg:mt-4 "
+              className="w-auto h-8   lg:w-auto lg:h-12 lg:mt-4 "
             />
-            {/* <div>
-              <h1 className=" font-bold  ">The Avid Attire</h1>
-              <p className="text-xs text-center font-semibold ">
-                Wear you passion
-              </p>
-            </div> */}
           </NavLink>
         </div>
       </div>
-      <div className="bg-black text-white text-center py-4 px-4 lg:px-0">
+      <div className="bg-black text-white text-sm text-center py-4 px-4 lg:px-0">
         <h1>
           All Rights Reserved © 2024 TheAvidAttire. Designed By Design LAb
         </h1>

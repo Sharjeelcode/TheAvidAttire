@@ -15,6 +15,8 @@ import Cart from "./pages/Cart.jsx";
 import Hero from "./pages/Hero.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Faqs from "./pages/Faqs.jsx";
+import CardView from "./pages/CardView.jsx";
+import BuyNow from "./pages/BuyNow.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -31,6 +33,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/cart" element={<Cart />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/faqs" element={<Faqs />} />
+          <Route path="/cardview" element={<CardView />} />
+          <Route path="/buynow" element={<BuyNow />} />
         </Route>
       </Routes>
     </BrowserRouter>
