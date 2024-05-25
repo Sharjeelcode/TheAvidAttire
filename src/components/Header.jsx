@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/blacklogo.png";
 import TopHeader from "./TopHeader";
 import { FaCartShopping } from "react-icons/fa6";
@@ -8,10 +8,25 @@ import "../App.css";
 import "animate.css";
 function Header() {
   const [mobileHeader, setMobileHeader] = useState(false);
+  const [mobileHeaderAnimation, setMobileHeaderAnimation] = useState("");
   const handleMobileHeader = () => {
-    !mobileHeader ? setMobileHeader(true) : setMobileHeader(false);
+    if (!mobileHeader) {
+      setMobileHeader(true);
+      setMobileHeaderAnimation("animate__animated  animate__fadeInLeftBig");
+    } else {
+      setTimeout(() => {
+        setMobileHeaderAnimation("animate__animated animate__fadeOutRightBig");
+      }, 100);
+      setTimeout(() => {
+        setMobileHeader(false);
+      }, 300);
+    }
+    console.log(mobileHeaderAnimation);
   };
 
+  const handleNavbar = () => {
+    setMobileHeader(false);
+  };
   return (
     <>
       <TopHeader />
@@ -19,15 +34,18 @@ function Header() {
       {mobileHeader && (
         <span
           onClick={handleMobileHeader}
-          className="animate__animated  animate__fadeInLeftBig  fixed top-20 left-[70vw] text-lg bg-gray-200 w-[10vw] h-[10vh] flex justify-center text-[#F96A00] items-center lg:hidden"
+          className={`${mobileHeaderAnimation}  fixed top-20 left-[70vw] text-lg bg-gray-200 w-[10vw] h-[10vh] flex justify-center text-[#F96A00] items-center lg:hidden z-[200]`}
         >
           x
         </span>
       )}
       {mobileHeader && (
-        <div className="animate__animated  animate__fadeInLeftBig lg:hidden flex flex-col gap-4 pt-10 pl-4 w-[70vw] h-[100vh]  bg-white fixed top-0  z-[200]">
+        <div
+          className={`${mobileHeaderAnimation}  lg:hidden flex flex-col gap-4 pt-10 pl-4 w-[70vw] h-[100vh]  bg-white fixed top-0  z-[200]`}
+        >
           <NavLink
             to={"/"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -41,6 +59,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/oversized"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -54,6 +73,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/shirts"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -67,6 +87,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/plain"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -80,6 +101,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/ragular"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -93,6 +115,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/bottomWear"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
@@ -106,6 +129,7 @@ function Header() {
           <hr />
           <NavLink
             to={"/bestSeller"}
+            onClick={handleNavbar}
             className={({ isActive }) =>
               `${
                 isActive
