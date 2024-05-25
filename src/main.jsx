@@ -17,6 +17,7 @@ import ContactUs from "./pages/ContactUs.jsx";
 import Faqs from "./pages/Faqs.jsx";
 import CardView from "./pages/CardView.jsx";
 import BuyNow from "./pages/BuyNow.jsx";
+import AdminPanel from "./admin/AdminPanel.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
@@ -35,7 +36,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/cardview" element={<CardView />} />
           <Route path="/buynow" element={<BuyNow />} />
+          <Route path="/buynow" element={<BuyNow />} />
         </Route>
+        <Route path="/admin/*" element={<AdminPanel />} />
       </Routes>
     </BrowserRouter>
   </Provider>
